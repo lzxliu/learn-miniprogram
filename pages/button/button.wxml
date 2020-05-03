@@ -1,0 +1,23 @@
+<!--pages/button/button.wxml-->
+<!-- 在正常情况下,button为block -->
+<button>按钮</button>
+<button>按钮</button>
+
+<!-- 使用mini,button转为inline-block -->
+<button size="mini">按钮</button>
+
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="warn">按钮</button>
+
+<!-- plain的使用,镂空效果 -->
+<button plain="true">按钮</button>
+
+<!-- 这里可以通过动态绑定来看是否需要加上loading效果 -->
+<button loading="{{isloading}}">按钮</button>
+
+<!-- hover-class的使用,和一个类一样,配合wxss使用 -->
+<button hover-class="pressed">按钮</button>
+
+
+

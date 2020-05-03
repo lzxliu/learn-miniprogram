@@ -1,0 +1,56 @@
+<!--pages/image/image.wxml-->
+
+<!--
+image的基本使用:
+  1.image组件可以使用双标签也可以单标签 
+  2.image有自己的默认大小  320*240(无论何种机型都是这个大小)
+  3.image是一个inline-block
+-->
+<image src="../../assets/tabbar/cart.png"></image>
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+<text>哈哈哈</text>
+<button bindtap="handleChooseAlbum">选择图片</button>
+<image src="{{imagePath}}"></image>
+
+<!-- 
+bindload 与lazy-load
+ -->
+<image 
+wx:for='{{1}}'
+src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" 
+bindload="handleLoad"
+lazy-load="true">
+</image>
+
+<!-- 
+show-menu-by-longpress
+ -->
+<image
+show-menu-by-longpress='true'
+src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+></image>
+
+<!-- 
+mode的简单使用
+ -->
+ <view>----------------------------</view>
+ <image
+ mode="scaleToFill"
+ src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+ ></image>
+ <image
+ mode="aspectFill"
+ src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+ ></image>
+ <image
+ mode="aspectFit"
+ src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+ ></image>
+ <image
+ mode="top"
+ src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+ ></image>
+ <image
+ mode="bottom"
+ src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+ ></image>

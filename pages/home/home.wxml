@@ -1,0 +1,10 @@
+<!--pages/home/home.wxml-->
+<text class="start">hello world\n</text>
+<text decode="true">hello lzx &lt; a\n</text>
+<text decode>hello lzx &lt; a\n</text>
+<text>hello lzx\n</text>
+<text space="nbsp">hello lzx\n</text>
+<text space="ensp">hello lzx\n</text>
+<text space="emsp">hello lzx\n</text>
+<text selectable="true">lzx</text>
+<my-cpn/>

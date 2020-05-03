@@ -1,0 +1,8 @@
+<!--pages/scroll/scroll.wxml-->
+<text>pages/scroll/scroll.wxml</text>
+<template name='test'>
+<button>{{btn}}</button>
+<view>{{content}}</view>
+</template>
+<template is="test"></template>
+<template is="test" data="{{btn: '点击', content: '哈哈哈'}}"/>

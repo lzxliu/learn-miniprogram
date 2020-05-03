@@ -1,0 +1,7 @@
+<!--pages/view/view.wxml-->
+<!-- view的基本使用,view类似于一个块 -->
+<text>pages/view/view.wxml</text>
+<view class="box2" hover-class="box2-hover">
+<view class="box1" hover-class="pressed" hover-stop-propagation
+>哈哈哈</view>
+</view>
